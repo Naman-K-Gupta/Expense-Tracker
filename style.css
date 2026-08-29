@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.balance-box {
+    text-align: center;
+    padding: 20px;
+    background: #eeeeee;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.balance-box h2 {
+    margin-top: 10px;
+    font-size: 30px;
+}
+
+/* Summary */
+
+.summary {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.income,
+.expense {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.income {
+    background: #d9f7df;
+}
+
+.expense {
+    background: #ffdede;
+}
+
+.income p {
+    color: green;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.expense p {
+    color: red;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+/* Form */
+
+.form-box {
+    margin-bottom: 30px;
+}
+
+.form-box h2 {
+    margin-bottom: 15px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #333;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #555;
+}
+
+/* Transactions */
+
+.transactions h2 {
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    background: #f1f1f1;
+    border-right: 5px solid;
+}
+
+li.income-item {
+    border-color: green;
+}
+
+li.expense-item {
+    border-color: red;
+}
+
+.transaction-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.delete-btn {
+    width: auto;
+    padding: 7px 12px;
+    background: red;
+    font-size: 14px;
+}
+
+.delete-btn:hover {
+    background: darkred;
+}
+
+/* Mobile */
+
+@media (max-width: 500px) {
+
+    .summary {
+        flex-direction: column;
+    }
+
+    body {
+        padding: 15px;
+    }
+
+    .container {
+        padding: 18px;
+    }
+}
